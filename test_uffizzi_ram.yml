@@ -24,14 +24,14 @@ services:
     deploy:
       resources:
         limits:
-          memory: 3000M
+          memory: 2000M
 
   vote:
     image: uffizzitest/vote:latest
     deploy:
       resources:
         limits:
-          memory: 3000M
+          memory: 2000M
 
   result:
     image: uffizzitest/result:latest
