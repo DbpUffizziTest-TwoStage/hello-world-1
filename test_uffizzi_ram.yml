@@ -13,7 +13,7 @@ services:
     deploy:
       resources:
         limits:
-          memory: 1000M
+          memory: 2000M
     entrypoint: /usr/sbin/nginx-debug
     command: 
       - "-g"
