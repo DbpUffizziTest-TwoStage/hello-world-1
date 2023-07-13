@@ -24,7 +24,7 @@ services:
     deploy:
       resources:
         limits:
-          memory: 1000M
+          memory: 2000M
 
   vote:
     image: uffizzitest/vote:latest
