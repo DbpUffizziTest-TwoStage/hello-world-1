@@ -20,21 +20,21 @@ services:
       - "daemon off;"
 
   worker:
-    image: uffizzicloud/example-worker:latest
+    image: uffizzitest/worker:latest
     deploy:
       resources:
         limits:
           memory: 4000M
 
   vote:
-    image: uffizzicloud/example-vote:latest
+    image: uffizzitest/vote:latest
     deploy:
       resources:
         limits:
           memory: 4000M
 
   result:
-    image: uffizzicloud/example-result:latest
+    image: uffizzitest/result:latest
 
 x-uffizzi-ingress:
   service: nginx
