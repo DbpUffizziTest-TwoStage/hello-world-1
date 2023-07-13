@@ -4,7 +4,7 @@ services:
     deploy:
       resources:
         limits:
-          memory: 1000M
+          memory: 2000M
 
   postgres:
     image: postgres:9.6
@@ -39,7 +39,7 @@ services:
     deploy:
       resources:
         limits:
-          memory: 1000M
+          memory: 125M
 
   result:
     image: uffizzitest/result:latest
