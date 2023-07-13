@@ -35,10 +35,7 @@ services:
 
   result:
     image: uffizzitest/result:latest
-    deploy:
-      resources:
-        limits:
-          memory: 500M
+
 
 x-uffizzi-ingress:
   service: nginx
