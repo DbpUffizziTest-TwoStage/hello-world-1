@@ -13,7 +13,7 @@ services:
     deploy:
       resources:
         limits:
-          memory: 125M
+          memory: 1000M
     entrypoint: /usr/sbin/nginx-debug
     command: 
       - "-g"
@@ -24,14 +24,14 @@ services:
     deploy:
       resources:
         limits:
-          memory: 125M
+          memory: 1000M
 
   vote:
     image: uffizzitest/vote:latest
     deploy:
       resources:
         limits:
-          memory: 125M
+          memory: 1000M
 
   result:
     image: uffizzitest/result:latest
