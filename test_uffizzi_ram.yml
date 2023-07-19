@@ -40,6 +40,10 @@ services:
 
   vote:
     image: uffizzitest/vote:latest
+    deploy:
+      resources:
+        limits:
+          memory: 500M
 
 
   result:
