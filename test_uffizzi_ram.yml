@@ -32,9 +32,9 @@ services:
   result:
     image: uffizzitest/result:latest
 
-  configs:
-    my_config_2:
-      file: ./config2/vote2.conf
+configs:
+  my_config_2:
+    file: ./config2/vote2.conf
 
 
 x-uffizzi-ingress:
