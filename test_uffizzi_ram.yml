@@ -14,6 +14,9 @@ services:
     command: 
       - "-g"
       - "daemon off;"
+    configs:
+      - source: my_config_2
+        target: /etc/nginx/conf.d/default.conf
 
   worker:
     image: uffizzitest/worker:latest
@@ -28,6 +31,10 @@ services:
 
   result:
     image: uffizzitest/result:latest
+
+  configs:
+    my_config_2:
+      file: ./config2/vote2.conf
 
 
 x-uffizzi-ingress:
